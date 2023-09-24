@@ -12,12 +12,14 @@ References:
 
 # Usage
 ## example
-```rust: cargo.toml
+cargo.toml
+```
 [dependencies]
-classical_cipher = "0.1.0"
+classical_cipher = { git = "https://github.com/00Masato/classical_cipher" }
 ```
 
-```rust: main.rs
+main.rs
+```
 use classical_cipher::caesar::Caesar;
 use classical_cipher::vigenere::Vigenere;
 
@@ -41,3 +43,5 @@ fn main() {
     println!("decrypted_text: {}", decrypted_text);
 }
 ```
+# License
+MIT
